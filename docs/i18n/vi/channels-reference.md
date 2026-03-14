@@ -299,10 +299,10 @@ receive_mode = "websocket"          # hoặc "webhook"
 port = 8081                          # bắt buộc ở chế độ webhook
 ```
 
-Hỗ trợ onboarding tương tác:
+Hỗ trợ thiết lập kênh tương tác:
 
 ```bash
-zeroclaw onboard --interactive
+zeroclaw onboard --channels-only
 ```
 
 Trình hướng dẫn bao gồm bước **Lark/Feishu** chuyên biệt với:

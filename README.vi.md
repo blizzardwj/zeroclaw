@@ -259,8 +259,8 @@ cd zeroclaw
 # Tùy chọn: cài đặt chỉ từ binary (không fallback sang build source)
 ./install.sh --prebuilt-only
 
-# Tùy chọn: chạy onboarding trong cùng luồng
-./install.sh --onboard --api-key "sk-..." --provider openrouter [--model "openrouter/auto"]
+# Tùy chọn: cấu hình provider ngay trong cùng luồng
+./install.sh --api-key "sk-..." --provider openrouter [--model "openrouter/auto"]
 
 # Tùy chọn: chạy bootstrap + onboarding hoàn toàn ở chế độ tương thích với Docker
 ./install.sh --docker
@@ -311,8 +311,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Cài nhanh (không cần tương tác, có thể chỉ định model)
 zeroclaw onboard --api-key sk-... --provider openrouter [--model "openrouter/auto"]
 
-# Hoặc dùng trình hướng dẫn tương tác
-zeroclaw onboard --interactive
+# Hoặc dùng quick setup mặc định
+zeroclaw onboard
 
 # Hoặc chỉ sửa nhanh channel/allowlist
 zeroclaw onboard --channels-only

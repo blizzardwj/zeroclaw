@@ -275,8 +275,8 @@ cd zeroclaw
 # Optional: binary-only install (no source build fallback)
 ./install.sh --prebuilt-only
 
-# Optional: run onboarding in the same flow
-./install.sh --onboard --api-key "sk-..." --provider openrouter [--model "openrouter/auto"]
+# Optional: preconfigure your provider in the same flow
+./install.sh --api-key "sk-..." --provider openrouter [--model "openrouter/auto"]
 
 # Optional: run bootstrap + onboarding fully in Docker-compatible mode
 ./install.sh --docker
@@ -327,8 +327,8 @@ export PATH="$HOME/.cargo/bin:$PATH"
 # Quick setup (no prompts, optional model specification)
 zeroclaw onboard --api-key sk-... --provider openrouter [--model "openrouter/auto"]
 
-# Or interactive wizard
-zeroclaw onboard --interactive
+# Or use default quick setup
+zeroclaw onboard
 
 # If config.toml already exists and you intentionally want to overwrite it
 zeroclaw onboard --force

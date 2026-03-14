@@ -163,7 +163,7 @@ cargo build --release --locked
 cargo install --path . --force --locked
 
 zeroclaw onboard --api-key sk-... --provider openrouter
-zeroclaw onboard --interactive
+zeroclaw onboard
 
 zeroclaw agent -m "Hello, ZeroClaw!"
 

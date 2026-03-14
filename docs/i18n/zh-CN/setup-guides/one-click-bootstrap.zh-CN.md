@@ -95,19 +95,19 @@ curl -fsSL https://raw.githubusercontent.com/zeroclaw-labs/zeroclaw/master/insta
 ### 快速引导（非交互式）
 
 ```bash
-./install.sh --onboard --api-key \"sk-...\" --provider openrouter
+./install.sh --api-key \"sk-...\" --provider openrouter
 ```
 
 或者使用环境变量：
 
 ```bash
-ZEROCLAW_API_KEY=\"sk-...\" ZEROCLAW_PROVIDER=\"openrouter\" ./install.sh --onboard
+ZEROCLAW_API_KEY=\"sk-...\" ZEROCLAW_PROVIDER=\"openrouter\" ./install.sh
 ```
 
-### 交互式引导
+### 引导式安装
 
 ```bash
-./install.sh --interactive-onboard
+./install.sh --guided
 ```
 
 ## 有用的参数
